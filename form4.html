@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Form 4</title>
+    <style>
+        *,
+        *::before,
+        *::after {
+            box-sizing: box-border;
+        }
+
+        :root {
+            --lightground: linear-gradient(90deg, rgba(177, 225, 231, 1) 0%, rgba(5, 209, 250, 1) 37%, rgba(185, 53, 200, 1) 100%);
+            ;
+        }
+
+        body {
+            background: var(--lightground);
+            font-family: Arial;
+        }
+
+        h1 {
+            padding: 0;
+            margin: 0;
+            color: var(--lightground);
+        }
+
+        form {
+            max-width: 600px;
+            background-color: white;
+            margin: 0 auto;
+            margin-top: 50px;
+            padding: 20px;
+        }
+
+        .first {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            gap: 10px;
+            margin-top: 20px;
+            margin-bottom: 20px;
+        }
+
+        input[type=text],
+        input[type=email] {
+            width: 100%;
+            border: none;
+            font-size: 16px;
+            background-color: lightgray;
+            padding: 10px 8px;
+            box-sizing: border-box;
+        }
+
+        input[type=text]::placeholders,
+        input[type=email]::placeholders {
+            color: black;
+        }
+
+        input[type=submit] {
+            text-transform: uppercase;
+            padding: 8px 20px;
+            background: var(--lightground);
+            color: white;
+            border: none;
+            font-weight: bold;
+            cursor: pointer;
+            transition: opacity 0.125s;
+            margin-top: 20px;
+            box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.4);
+        }
+
+        input[type=submit]:hover {
+            opacity: 0.8;
+        }
+    </style>
+</head>
+
+<body>
+    <form>
+        <h1>Contact Us</h1>
+        <div class="first">
+            <input type="text" name="firstname" placeholder="First Name">
+            <input type="text" name="lastname" placeholder="Last Name">
+        </div>
+        <div class="first">
+            <input type="email" name="email" placeholder="Email Address">
+            <input type="text" name="website" placeholder="Webiste">
+        </div>
+        <input type="text" name="message" placeholder="Write Your Message">
+        <input type="submit" value="submit">
+    </form>
+</body>
+
+</html>
