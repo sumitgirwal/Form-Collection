@@ -1,0 +1,60 @@
+<html>
+
+<head>
+    <title>Form 1</title>
+    <style>
+        *,
+        *:before,
+        *:after {
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Arial;
+        }
+
+        form {
+            max-width: 400px;
+            margin: 0 auto;
+            border: 1px solid lightgray;
+            padding: 10px;
+            margin-top: 100px;
+        }
+
+        input[type=text],
+        input[type=password] {
+            width: 100%;
+            display: block;
+            margin: 10px 0;
+            padding: 10px 10px;
+            border: none;
+            background-color: lightgray;
+        }
+
+        input[type=submit] {
+            padding: 10px 15px;
+            width: 100%;
+            background-color: black;
+            color: white;
+            font-size: 1rem;
+            cursor: pointer;
+            border: none;
+        }
+
+        input[type=submit]:hover {
+            opacity: 0.8;
+        }
+    </style>
+</head>
+
+<body>
+    <form>
+        <label>Email</label>
+        <input type="text" name="email" id="email" placeholder="Enter email">
+        <label>Password</label>
+        <input type="password" name="password" id="password" placeholder="Enter password">
+        <input type="submit" value="Login">
+    </form>
+</body>
+
+</html>
